@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="cecContactApp" ng-controller="cecMainController as vmMain">
+   <head >
+      <title>{{ vmMain.titleProject }}</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/lib/animate/animate.css">
+      <link rel="stylesheet" href="assets/lib/select2/css/select2.min.css">
+
+
+      <link rel="stylesheet" href="assets/lib/pnotify-master/pnotify.css">
+      <link rel="stylesheet" href="assets/lib/pnotify-master/pnotify.buttons.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+
+
+            
+   </head>
+   <body >
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-blue">
+         <a class="navbar-brand" href="javascript:void(0)" id="menu-toggle" > {{ vmMain.titleProjectBar }}</a>
+      </nav>
+      <main id="container-main" class="container-fluid">
+         
+         <ng-view></ng-view>
+
+      </main>
+      <footer class="footer-cec">
+         <div class="container-fluid">
+
+            <span class="text-muted pull-right animated fadeInLeft"><span cec-text="DESENVOLVIDO_POR"></span> Claudio Alexssandro Lino.</span>
+         </div>
+      </footer>
+      
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="assets/lib/jquery/jquery-3.2.1.min.js" ></script>
+      <script src="assets/lib/popper.js/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+      <script src="assets/lib/bootstrap/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+      <script src="assets/lib/select2/js/select2.full.min.js" ></script>
+      <script src="assets/lib/select2/js/i18n/pt-BR.js" ></script>
+      
+      <script src="assets/lib/pnotify-master/pnotify.js"></script>
+      <script src="assets/lib/pnotify-master/pnotify.confirm.js"></script>
+      <script src="assets/lib/pnotify-master/pnotify.buttons.js"></script>
+
+      <script src="assets/lib/angular/angular.min.js" ></script>
+      <script src="assets/lib/angular/angular-route.min.js" ></script>
+      
+
+      <script src="assets/lib/angular/ngStorage.min.js" ></script>
+      <script src="assets/lib/angular/angular-pnotify.js" ></script>
+
+
+      
+      <script src="app/cec-contact/cecContactApp.js" ></script>
+
+      <script src="app/cec-contact/cecRoutes.js" ></script>
+      <script src="app/cec-contact/lang/cecLoadLang.js" ></script>
+      
+      <script src="app/cec-contact/directives/cec-text.js" ></script>
+      <script src="app/cec-contact/directives/cec-placeholder.js" ></script>
+      
+      <script src="app/cec-contact/components/cecTableContact.js" ></script>
+      <script src="app/cec-contact/components/cecSelectStates.js" ></script>
+      
+      <script src="app/cec-contact/services/cecContactApiFactory.js" ></script>
+      <script src="app/cec-contact/services/cecContactLoadFactory.js" ></script>
+      <script src="app/cec-contact/services/cecStatestLoadFactory.js" ></script>
+      
+      <script src="app/cec-contact/controllers/cecMainController.js" ></script>
+      
+      <script src="app/cec-contact/modules/index/controllers/cecIndexController.js" ></script>
+      <script src="app/cec-contact/modules/index/controllers/cecIndexTableContactController.js" ></script>
+      <script src="app/cec-contact/modules/index/controllers/cecIndexActionPanelController.js" ></script>
+
+
+      <script>
+         jQuery(document).ready(function($) {
+
+            $('.fecharModal').click(function(event) {
+                console.log('asas');
+            });
+            PNotify.prototype.options.styling = "bootstrap3";
+            PNotify.prototype.options.width = "350px";
+            $.fn.select2.defaults.formatSelection;
+               $( ".select2" ).select2({
+                       "language": "pt-BR",
+                       "theme":"bootstrap",
+                        width: '100%'
+               });
+         });
+      </script>
+
+
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39763342-15"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-39763342-15');
+      </script>
+  
+
+
+
+   </body>
+</html>

@@ -1,0 +1,47 @@
+<!-- PAINEL EDITAR REGISTRO -->
+<div class="row" ng-show="activePanelEditContact">
+   <div id="" class="col-md-12">
+      <div class="card animated fadeInRight">
+         <div class="card-header">
+            <i class="fa fa-address-card-o" aria-hidden="true"></i>
+            <span cec-text="PAINEL_EDITAR_CONTATO_TITULO"></span>
+         </div>
+         <div class="card-body">
+            <h4 class="card-title"></h4>
+            <p class="card-text"></p>
+            <form class="modal-create-add-user" name="frmEditReg" novalidate onsubmit="return false;">
+               <input type="hidden" >
+               <div class="form-group">
+                  <div class="form-row">
+                     <div class="input-group col">
+                        <div class="input-group-addon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                        <input type="text" class="form-control all_fields"   placeholder="Nome completo" ng-model="vm.editRecord.name">
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="form-row">
+                     <div class="input-group col">
+                        <div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <input type="email" class="form-control all_fields"  placeholder="E-mail" ng-model="vm.editRecord.email">
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="form-row">
+                     <cec-select-states cec-states="vm.listStates" cec-id="slect-state" cec-model="vm.editRecord.state" class="col-md-12"></cec-select-states>
+                  </div>
+               </div>
+               <div class="form-group float-right">
+                  <div class="form-row">
+                     <button class="btn btn-secondary" type="button" ng-click="vm.returnPanel()" cec-text="PAINEL_EDITAR_CONTATO_BTN_CANCELAR"></button>&nbsp;
+                     <button class="btn btn-info" type="button" ng-click="vm.alterRecord(vm.editRecord, vm.editIndexReg)" cec-text="PAINEL_EDITAR_CONTATO_BTN_ALTERAR"></button>
+                    
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+   <!-- ### Final da div  ### -->
+</div>

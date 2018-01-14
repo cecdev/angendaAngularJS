@@ -1,0 +1,56 @@
+{
+	"DESENVOLVIDO_POR":"Developed by",
+
+	"HEADER_TITULO_PROJETO": "AngularJS - Contact Schedule!",
+	"TITULO_PROJETO": "AngularJS - Contact Schedule!",
+
+	"TABELA_CONTATOS_TITULO"                 : "Contact list",
+	"TABELA_CONTATOS_FORM_IMPUT_PLACEHOLDER" : "Who do you want to meet?",
+	
+	"TABELA_CONTATOS_TH_NOME"   : "Full name",
+	"TABELA_CONTATOS_TH_EMAIL"  : "E-mail",
+	"TABELA_CONTATOS_TH_ESTADO" : "State",
+	"TABELA_CONTATOS_TH_ACOES"  : "Actions",
+	"TABELA_CONTATOS_NENHUM_REGISTRO"  : "No records found",
+	"TABELA_CONTATOS_NOTIFICA_DELETE_SUCESSO"  : "Conactus was successfully excluded!!!",
+	
+	"TABELA_CONTATOS_MODAL_DELETAR_TITLE"  : "Delete record",
+	"TABELA_CONTATOS_MODAL_DELETAR_TEXTO_CONFIRMACAO"  : "Are you sure you want to delete this regitt? ",
+	"TABELA_CONTATOS_MODAL_DELETAR_BTN_CANCELAR"  : "Cancel",
+	"TABELA_CONTATOS_MODAL_DELETAR_BTN_SIM"  : "Yes, I know what I'm doing!",
+
+
+	"PAINEL_INFO_TITULO"                 : "Dashboard",
+	"PAINEL_INFO_TITULO_DESC"            : "Choose one of the actions to activate this panel.",
+	"PAINEL_INFO_NEW_CONTACT"            : "To add a new record click on the add button located at the bottom of the page.",
+	"PAINEL_INFO_EDIT_CONTACT"           : "To edit or delete a record use the action buttons in the table opposite.",
+	"PAINEL_INFO_DESC_CARREGAR_EXEMPLOS" : "If you prefer you can load some example records.",
+	"PAINEL_INFO_BTN_CARREGAR_EXEMPLOS"  : "<i class='fa fa-tasks' aria-hidden='true'></i>&nbsp;Load sample record.",
+
+	"PAINEL_ADICIONAR_CONTATO_TITULO"           : "Fill in the fields below to add a new record.",
+	"PAINEL_ADICIONAR_CONTATO_PLACEHOLDER_NOME" : "Full name",
+	"PAINEL_ADICIONAR_CONTATO_PLACEHOLDER_EMAIL" : "E-mail",
+	"PAINEL_ADICIONAR_CONTATO_BTN_CANCELAR" : "Cancel",
+	"PAINEL_ADICIONAR_CONTATO_BTN_SALVAR" : "<i class='fa fa-floppy-o' aria-hidden='true'></i>&nbsp;Save record",
+
+	"PAINEL_ADICIONAR_NOVO_CONTATO_NOTIFICA_SUCESSO_TEXTO"  : "New contact successfully added!!!",
+	"PAINEL_ADICIONAR_NOVO_CONTATO_NOTIFICA_ERRO_TEXTO"  : "Oppss!!! For some reason I could not save the contact.",
+	"PAINEL_ADICIONAR_NOVO_CONTATO_NOTIFICA_ERRO_PREENCHER_TEXTO"  : "Oppss!!! Fill in the new contact information correctly!!",
+
+	"PAINEL_ADICIONAR_CONTATO_NOTIFICA_SUCESSO_TITULO" : "It worked, piss!",
+	"PAINEL_ADICIONAR_CONTATO_NOTIFICA_SUCESSO_TEXTO"  : "Sample data upload succeeded.",
+
+	"PAINEL_ADICIONAR_CONTATO_NOTIFICA_ERRO_TITULO" : "Oppss sorry!",
+	"PAINEL_ADICIONAR_CONTATO_NOTIFICA_ERRO_TEXTO"  : "Something went wrong when loading the examples.",
+
+	"PAINEL_EDITAR_CONTATO_TITULO" : "Editing record.",
+	"PAINEL_EDITAR_CONTATO_BTN_CANCELAR" : "Cancel",
+	"PAINEL_EDITAR_CONTATO_BTN_ALTERAR" : "Change contact",
+	"PAINEL_EDITAR_CONTATO_NOTIFICA_SUCESSO_TEXTO" : "The data has been changed successfully !!",
+	"PAINEL_EDITAR_CONTATO_NOTIFICA_ERRO_TEXTO" : "Oppss!!! Fill in the contact details correctly!!",
+
+	"PAINEL_COMBO_ESTADO_SELECIONE" : "Select a state",
+	"PAINEL_COMBO_ESTADO_CARREGANDO" : "Loading states"
+
+}
+

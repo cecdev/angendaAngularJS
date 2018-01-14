@@ -1,0 +1,8 @@
+<div ng-if="$ctrl.listStates != undefined">
+   <select id="{{ $ctrl.cecConfig.id }}" name="{{ $ctrl.cecId }}" class="select2 form-control all_fields" ng-model="$ctrl.cecModel" ng-options="nemeState.name as nemeState.name for nemeState in $ctrl.listStates"  ng-required='true'>
+      <option value="" disabled>{{ $ctrl.selectText }}</option>
+   </select>
+</div>
+<div ng-if="$ctrl.listStates == undefined">
+   <h3 class="text-center"><i class="fa fa-spinner fa-pulse fa-fw"></i><span>&nbsp; {{ $ctrl.loadText }} </span></h3>
+</div>

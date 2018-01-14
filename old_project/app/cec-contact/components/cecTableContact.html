@@ -1,0 +1,38 @@
+<form class="form-group clearfix">
+   <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+      <div class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></div>
+      <input type="text" class="form-control" id="search-reg" cec-placeholder="TABELA_CONTATOS_FORM_IMPUT_PLACEHOLDER" ng-model="$ctrl.searchFilter">
+   </div>
+</form>
+<table class="table table-hover">
+   <thead>
+      <tr>
+         <th class="hover_order" ng-click="$ctrl.orderNow('name')" ><i class="fa fa-sort" aria-hidden="true"></i>  <span cec-text="TABELA_CONTATOS_TH_NOME"></span></th>
+         <th class="hover_order" ng-click="$ctrl.orderNow('email')" ><i class="fa fa-sort" aria-hidden="true"></i>   <span cec-text="TABELA_CONTATOS_TH_EMAIL"></span> </th>
+         <th class="hover_order" ng-click="$ctrl.orderNow('state')" ><i class="fa fa-sort" aria-hidden="true"></i>   <span cec-text="TABELA_CONTATOS_TH_ESTADO"></span> </th>
+         <th width="160" class="text-center"><i class="fa fa-cogs" aria-hidden="true"></i> <span cec-text="TABELA_CONTATOS_TH_ACOES"></span></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr ng-if="$ctrl.contacts[0].name != undefined" ng-repeat="contact in $ctrl.contacts | filter:{name: $ctrl.searchFilter} | orderBy:$ctrl.sortByfield:$ctrl.orderDirection">
+         <td>{{ contact.name | uppercase }}</td>
+         <td>{{ contact.email | uppercase }}</td>
+         <td>{{ contact.state | uppercase }}</td>
+         <td class="text-center">
+            <div class="btn-group" role="group" aria-label="Ações user">
+               <button type="button" class="btn btn-info text-center" ng-click="$ctrl.showEditRecord($index)"">
+               <i class="fa fa-pencil" aria-hidden="true"></i>
+               </button>
+               <button type="button" class="btn btn-secondary text-center" ng-click="$ctrl.deleteRecord($index)">
+               <i class="fa fa-trash" aria-hidden="true"></i>
+               </button>
+            </div>
+         </td>
+      </tr>
+      <tr ng-if="$ctrl.contacts[0].name == undefined">
+         <td colspan="4" class="text-center">
+            <h5 cec-text="TABELA_CONTATOS_NENHUM_REGISTRO"></h5>
+         </td>
+      </tr>
+   </tbody>
+</table>

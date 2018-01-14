@@ -1,0 +1,56 @@
+{
+	"DESENVOLVIDO_POR":"Desenvolvido por",
+
+	"HEADER_TITULO_PROJETO": "AngularJS - Agenda de contato!",
+	"TITULO_PROJETO": "AngularJS - Agenda de contato!",
+
+	"TABELA_CONTATOS_TITULO"                 : "Lista de contatos",
+	"TABELA_CONTATOS_FORM_IMPUT_PLACEHOLDER" : "Quem você deseja encontrar?",
+	
+	"TABELA_CONTATOS_TH_NOME"                 : "Nome completo",
+	"TABELA_CONTATOS_TH_EMAIL"                : "E-mail",
+	"TABELA_CONTATOS_TH_ESTADO"               : "Estado",
+	"TABELA_CONTATOS_TH_ACOES"                : "Ações",
+	"TABELA_CONTATOS_NENHUM_REGISTRO"         : "Nenhum registro encontrado",
+	"TABELA_CONTATOS_NOTIFICA_DELETE_SUCESSO" : "O contato foi excluído com sucesso!!!",
+	
+	"TABELA_CONTATOS_MODAL_DELETAR_TITLE"              : "Deletar registro",
+	"TABELA_CONTATOS_MODAL_DELETAR_TEXTO_CONFIRMACAO" : "Tem certeza que deseja excluir esse registro? ",
+	"TABELA_CONTATOS_MODAL_DELETAR_BTN_CANCELAR"      : "Cancelar",
+	"TABELA_CONTATOS_MODAL_DELETAR_BTN_SIM"           : "Sim, eu sei que estou fazendo!",
+
+
+	"PAINEL_INFO_TITULO"                 : "Painel de instruções",
+	"PAINEL_INFO_TITULO_DESC"            : "Escolha uma das ações para ativar esse painel.",
+	"PAINEL_INFO_NEW_CONTACT"            : "Para incluir um novo registo clique no botão adicionar localizado na parte inferior da pagina.",
+	"PAINEL_INFO_EDIT_CONTACT"           : "Para editar ou excluir um registro utilize os botões de ação presente na tabela ao lado.",
+	"PAINEL_INFO_DESC_CARREGAR_EXEMPLOS" : "Caso prefira você pode carregar alguns registros de exemplo.",
+	"PAINEL_INFO_BTN_CARREGAR_EXEMPLOS"  : "<i class='fa fa-tasks' aria-hidden='true'></i>&nbsp;Carregar registro de exemplo.",
+
+	"PAINEL_ADICIONAR_CONTATO_TITULO"            : "Preencha os campos abaixo para adicionar novo registro.",
+	"PAINEL_ADICIONAR_CONTATO_PLACEHOLDER_NOME"  : "Nome completo",
+	"PAINEL_ADICIONAR_CONTATO_PLACEHOLDER_EMAIL" : "Endereço eletronico (E-mail)",
+	"PAINEL_ADICIONAR_CONTATO_BTN_CANCELAR"      : "Cancelar",
+	"PAINEL_ADICIONAR_CONTATO_BTN_SALVAR"        : "<i class='fa fa-floppy-o' aria-hidden='true'></i>&nbsp;Salvar registro",
+
+	"PAINEL_ADICIONAR_NOVO_CONTATO_NOTIFICA_SUCESSO_TEXTO"        : "Novo contato adicionado com sucesso!!!",
+	"PAINEL_ADICIONAR_NOVO_CONTATO_NOTIFICA_ERRO_TEXTO"           : "Oppss!!! Por algum  motivo não consegui salvar o contato.",
+	"PAINEL_ADICIONAR_NOVO_CONTATO_NOTIFICA_ERRO_PREENCHER_TEXTO" : "Oppss!!! Preencha corretamente os dados do novo contato!!",
+
+	"PAINEL_ADICIONAR_CONTATO_NOTIFICA_SUCESSO_TITULO" : "Deu certo, ufa!",
+	"PAINEL_ADICIONAR_CONTATO_NOTIFICA_SUCESSO_TEXTO"  : "Carregamento dos dados de exemplo realizado com sucesso.",
+
+	"PAINEL_ADICIONAR_CONTATO_NOTIFICA_ERRO_TITULO" : "Oppss, descula!",
+	"PAINEL_ADICIONAR_CONTATO_NOTIFICA_ERRO_TEXTO"  : "Algo deu errado na hora de carregar os exemplos.",
+
+	"PAINEL_EDITAR_CONTATO_TITULO"                 : "Editando registro.",
+	"PAINEL_EDITAR_CONTATO_BTN_CANCELAR"           : "Cancelar",
+	"PAINEL_EDITAR_CONTATO_BTN_ALTERAR"            : "Alterar contato",
+	"PAINEL_EDITAR_CONTATO_NOTIFICA_SUCESSO_TEXTO" : "Os dados foram alterados com sucesso!!",
+	"PAINEL_EDITAR_CONTATO_NOTIFICA_ERRO_TEXTO"    : "Oppss!!! Preencha corretamente os dados do contato!!",
+
+	"PAINEL_COMBO_ESTADO_SELECIONE"  : "Selecione um estado",
+	"PAINEL_COMBO_ESTADO_CARREGANDO" : "Carregando os estados"
+
+}
+

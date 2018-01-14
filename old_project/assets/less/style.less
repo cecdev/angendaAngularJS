@@ -1,0 +1,82 @@
+@import (reference) "color.less";
+@import (reference) "functions.less";
+
+button{
+  cursor: pointer;
+}
+
+.bg-blue {
+  background: @azul;
+}
+
+#container-main {
+  margin-top: 57px;
+
+  #tbl-lista {
+  }
+
+  #conteudo-esquerdo {
+    overflow: hidden;
+    .top_padding();
+
+    .hover_order {
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, .03);
+      }
+
+    }
+
+  }
+
+  #conteudo-direito {
+    .top_padding();
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+    background-color: rgba(0, 0, 0, 0.08);
+    min-height: 87vh;
+    overflow: hidden;
+
+    .card {
+      img {
+        height: 50px;
+      }
+
+    }
+    .fixed-button {
+      background-color: #FF2434;
+      color: #FFFFFF;
+      border: none;
+      outline: none;
+      position: fixed;
+      bottom: 0px;
+      right: 15px;
+      height: 70px;
+      width: 70px;
+      margin-bottom: 100px;
+      z-index: 999;
+      box-shadow: 1px 3px 5px #888888;
+      cursor: pointer;
+    }
+
+    .wobble {
+      -webkit-animation-name: wobble;
+      animation-name: wobble;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+
+  }
+
+}
+
+.footer-cec {
+  width: 100%;  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}

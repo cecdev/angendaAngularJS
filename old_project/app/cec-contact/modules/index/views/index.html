@@ -1,0 +1,24 @@
+<div class="row">
+   <div id="conteudo-esquerdo" class="col-md-8" ng-controller="cecIndexTableContactController as vm">
+      <section ng-include="vmIndex.sections.TABELA_CONTATOS"></section>
+      <div class="row">
+         <div class="col-md-12">
+            <!-- CAMPO DE TESTE  -->
+         </div>
+      </div>
+      <!-- /.row final linha -->
+      <!-- /.row final linha -->
+   </div>
+   <!-- ### Final da div conteudo-esquesdo ### -->
+   <div id="conteudo-direito" class="col-md-4" ng-controller="cecIndexActionPanelController as vm">
+      <section ng-include="vmIndex.sections.PAINEL_INFO"></section>
+      <section ng-include="vmIndex.sections.PAINEL_NOVO_CONTATO"></section>
+      <section ng-include="vmIndex.sections.PAINEL_EDITAR_CONTATO"></section>
+      <!-- / PAINEL EDITAR REGISTRO -->
+      <button class="fixed-button wobble rounded-circle align-middle" type="button" ng-click="vm.showAddRecord()">
+      <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+      </button>
+   </div>
+   <!-- ### Final da div conteudo-direito ### -->
+</div>
+<!-- /.row final linha -->

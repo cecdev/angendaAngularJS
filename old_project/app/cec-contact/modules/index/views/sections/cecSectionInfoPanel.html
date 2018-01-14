@@ -1,0 +1,33 @@
+<!-- PAINEL DEFAULT -->
+<div class="row" ng-show="activePanelInfo">
+   <div id="" class="col-md-12">
+      <div class="card animated fadeInRight" >
+         <div class="card-header" ><i class="fa fa-info-circle" aria-hidden="true"></i> <span cec-text='PAINEL_INFO_TITULO'></span></div>
+         <div class="card-body">
+            <h4 class="card-title" cec-text="PAINEL_INFO_TITULO_DESC"></h4>
+            <p class="card-text"></p>
+            <table class="table ">
+               <tbody>
+                  <tr>
+                     <td cec-text="PAINEL_INFO_NEW_CONTACT"></td>
+                     <td><img src="assets/images/add.png" alt=""></td>
+                  </tr>
+                  <tr>
+                     <td cec-text="PAINEL_INFO_EDIT_CONTACT"></td>
+                     <td><img src="assets/images/edit-trash.png" alt=""></td>
+                  </tr>
+               </tbody>
+            </table>
+            <br>
+            <div ng-if="listContact.length <= 0">
+               <hr>
+               <p cec-text="PAINEL_INFO_DESC_CARREGAR_EXEMPLOS"></p>
+               <button class="btn btn-block btn-info"  type="button" ng-click="vm.loadListContact()" cec-text="PAINEL_INFO_BTN_CARREGAR_EXEMPLOS">
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- ### Final da div  ### -->
+</div>
+<!-- / PAINEL DEFAULT -->

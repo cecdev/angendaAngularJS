@@ -1,0 +1,35 @@
+<div class="row">
+   <article id="tbl-lista " class="col-md-12">
+      <div class="card animated fadeInUp">
+         <div class="card-header">
+            <h2 ><i class="fa fa-list" aria-hidden="true"></i> <span cec-text='TABELA_CONTATOS_TITULO'></span></h2>
+         </div>
+         <div class="card-body">
+            <cec-table-contact  contacts='listContact' ></cec-table-contact>
+            <div ></div>
+         </div>
+      </div>
+   </article>
+   <!-- ### Final da div tbl-cadastros ### --> 
+</div>
+<!-- Modal Deletar Registro -->
+<div class="modal fade" id="modalDeleteRecord" tabindex="-1" role="dialog" aria-labelledby="modalDeleteRecordLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title" id="modalDeleteRecordLabel" cec-text="TABELA_CONTATOS_MODAL_DELETAR_TITLE"></h5>
+            <button type="button" class="close fecharModal" aria-label="Close" ng-click="closeModal()">
+            <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         <div class="modal-body">
+            <p class="text-center" cec-text="TABELA_CONTATOS_MODAL_DELETAR_TEXTO_CONFIRMACAO"></p>
+            <h4 class="text-center"> {{ recordNameDelete }} </h4>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" cec-text="TABELA_CONTATOS_MODAL_DELETAR_BTN_CANCELAR"></button>
+            <button type="button" class="btn btn-primary" cec-text="TABELA_CONTATOS_MODAL_DELETAR_BTN_SIM" ng-click="confirmDeleteRecord()"></button>
+         </div>
+      </div>
+   </div>
+</div>

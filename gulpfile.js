@@ -8,33 +8,25 @@ var concat = require('gulp-concat');
 var inject = require('gulp-inject');
 var path_bower = 'bower_components';
 
+// A pasta de destino sera a DOCS que é a pasta que o GitHub usa para as pages
+var path_dist = "docs"
+
 var libs = {
-	jquery: {
-		js: {
-			src:[''],
-			dist:['']
-		}
-	},
+	fontawesome:{ src:[''], dist:[''] },
+	animatecss:{ src:[''], dist:[''] },
+	jquery: { src:[''], dist:[''] },
+	popperjs:{ src:[''], dist:[''] },
 	bootstrap: {
-		css: {
-			src:[''],
-			dist:['']
-		},
-		js: {
-			src:[''],
-			dist:['']
-		}
+		css: { src:[''], dist:[''] },
+		js: { src:[''], dist:[''] }
 	},
-	pnotify:{
-		css:{
-			src:[''],
-			dist:['']
-		},
-		js: {
-			src:[''],
-			dist:['']
-		}
-	}
+	pnotify:{ 
+		css:{ src:[''], dist:[''] },
+		js: { src:[''], dist:[''] }
+	},
+	angular:{ src:[''], dist:[''] },
+	ngStorage:{ src:[''], dist:[''] },
+	angularPnotify:{ src:[''], dist:[''] }
 };
 
 

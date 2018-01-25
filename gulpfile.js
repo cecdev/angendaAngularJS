@@ -1,3 +1,4 @@
+var elixir = require('laravel-elixir');
 var gulp      = require('gulp');
 var sass      = require('gulp-ruby-sass');
 var watch     = require('gulp-watch');
@@ -6,10 +7,18 @@ var uglify = require('gulp-uglify');
 var pump = require('pump');
 var concat = require('gulp-concat');
 var inject = require('gulp-inject');
+var clean = require('rimraf');
+
+
+
 var path_bower = 'bower_components';
 
 // A pasta de destino sera a DOCS que é a pasta que o GitHub usa para as pages
-var path_dist = "docs"
+var build_path = "./docs"
+
+gulp.task('clear-build-folder', function(){
+    clean.sync(build_path);
+});
 
 var libs = {
 	fontawesome:{ src:[''], dist:[''] },
